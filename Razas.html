@@ -1,54 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title> Razas seleccionables </title>
-    </head>
-    <body>
-    <h2> Diferentes razas en Ugbah </h2>
-    <p><b>Homos</b></p>
-    <ul>
-        <li>Austrolopithecus</li>
-        <li>Erectus</li>
-        <li>Floreciensis</li>
-        <li>Neandertal</li>
-        <li>Sapiens</li>
-        <li>Altior</li>
-        <li>Melius</li>
-    </ul>
-    <p><b>Rakashas</b></p>
-    <ul>
-        <li>Rakashas del Este</li>
-        <li>Rakashas del Oste</li>
-        
-    </ul>
-    <p><b>Nodas</b></p>
-    <ul>
-        <li>Nodas del Valle</li>
-        <li>Nodas Desertores</li>
-    </ul>
-    <p><b>Ogros</b></p>
-    <ul>
-        <li>Ogros Migratorios</li>
-        <li>Ogros Árticos</li>
-    </ul>
-    <p><b>Tauros</b></p>
-    <ul>
-        <li>Cervitauros</li>
-        <li>Minotauros</li>
-    </ul>
-    <p><b>Centauros</b></p>
-    <ul>
-        <li>Del Gran Árbol</li>
-        <li>Silvanos</li>
-        <li>Fortivos</li>
-        <li>Rhinokeros</li>
-    </ul>
-    <p><b>Vulpes</b></p>
-    <ul>
-        <li>Sylpex</li>
-        <li>Lycalopex</li>
-    </ul>
-    </body>
-    </html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razas Seleccionables - Ugbah</title>
+    <style>
+        body {
+            font-family: 'Crimson Text', serif; /* Fuente con toque rústico */
+            background-color: #c59971; /* Fondo en tono beige */
+            color: #f3ddc0;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #c7915b;
+        }
+        section {
+    position: relative; /* Necesario para que el pseudo-elemento se posicione correctamente */
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 800px;
+    background-image: url('https://img.freepik.com/foto-gratis/piedra-negro_1194-5746.jpg?t=st=1728900543~exp=1728904143~hmac=994a4389c50f8525631fd46ae0aa61a5b0754e6d40361ce11377358d329dfd6a&w=826');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Asegura que el contenido del section esté por encima del pseudo-elemento */
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad al 50% */
+    border-radius: 8px; /* Igualar el borde del section */
+    z-index: -1; /* Para que esta capa quede detrás del contenido */
+}
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            background-color: #3d3b396b;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 12px;
+        }
+        header {
+    position: relative;
+    background-image: url('https://media.craiyon.com/2023-10-14/ac6ee80c6f52477888db5e4fa5e86d7e.webp');
+    background-size: cover; /* Asegura que la imagen cubra todo el área del header */
+    background-position: center; /* Centra la imagen en el header */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    height: 90px; /* Ajusta la altura del header según sea necesario */
+}
+
+        article {
+            padding: 10px;
+            margin: 10px 0;
+        }
+        article p {
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #fffffe;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Razas Seleccionables de Ugbah</h1>
+    </header>
+
+    <section>
+        <h2>Homos</h2>
+        <p>Nuestra historia de la humanidad se encuentra aparentemente en un mismo tramo temporal, viendo juntos Erectus y Sapiens. </p>
+        <ul>
+            <li><a href= Austrolopithecus.html>Austrolopithecus</a></li>
+            <li><a href= Erectus.html>Erectus</a></li>
+            <li><a href= Floreciensis.html>Floreciensis</a></li>
+            <li><a href= Neandertalensis.html>Neandertalensis</a></li>
+            <li><a href= Sapiens.html>Sapiens</a></li>
+            <li><a href= Altior.html>Altior</a></li>
+            <li><a href= Melius.html>Melius</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Rakashas</h2>
+        <p>Seres felinos de gran agilidad y astucia, originarios de la voluntad de Lynxara</p>
+        <ul>
+            <li><a href= Rak-Ashas.html>Rak'Ashas, Hijos de Lynxara</a></li>
+            <li><a href= Raksashas.html>Raksashas, Guerreros de Lynxara</a></li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Nodas</h2>
+        <p>Evolucionados de los míticos Dinosaurios, habitan los enormes sistemas de cuevas para salir al exterior de noche y cazar</p>
+        <ul>
+            <li><a href= Nodas-Este.html>Nodas del Valle</a></li>
+            <li><a href= Nodas-Oeste.html>Nodas Desertores</a></li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Ogros</h2>
+        <p>Grandes humanoides que abandonaron su gran inteligencia tras la Caida de su Era Dorada</p>
+        <ul>
+            <li><a href= Ogros-Migratorios.html>Ogros Migratorios</a></li>
+            <li><a href= Ogros- Articos.html>Ogros Árticos</a></li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Tauros</h2>
+        <p>Grandes bóvidos antropomorficos, de caracter pasivo pero con gran poder</p>
+        <ul>
+            <li><a href= Cervitauros.html>Cervitauros</a></li>
+            <li><a href= Minotauros.html>Minotauros</a></li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Centauros</h2>
+        <p>Protectores de las presas. Mitad homínido mitad Eohippus</p>
+        <ul>
+            <li><a href= Centauros-Este.html>Centauros Del Gran Árbol</a></li>
+            <li><a href= Centauros-Oeste.html>Centauros Silvanos</a></li>
+            <li><a href= Centauros-Centro.html>Centauros Fortivos</a></li>
+            <li><a href= Rhinokeros.html>Rhinokeros</a></li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Vulpes</h2>
+        <p>Hijos de la Gran Madriguera, astutos por naturaleza aunque en crisis de población</p>
+        <ul>
+            <li><a href= Sylpex.html>Sylpex</a></li>
+            <li><a href=Lycalopex.html>Lycalopex</a></li>
+        </ul>
+    </section>
+</body>
+</html>

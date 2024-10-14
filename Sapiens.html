@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sapiens - Ugbah</title>
+    <style>
+        body {
+            font-family: 'Crimson Text', serif; /* Fuente con toque rústico */
+            background-color: #c98a43; /* Fondo en tono beige */
+            color: #cec9c9;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #e09e3a;
+        }
+        section {
+            position: relative; /* Necesario para que el pseudo-elemento se posicione correctamente */
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 800px;
+            background-image: url('https://img.freepik.com/foto-gratis/piedra-negro_1194-5746.jpg?t=st=1728900543~exp=1728904143~hmac=994a4389c50f8525631fd46ae0aa61a5b0754e6d40361ce11377358d329dfd6a&w=826');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgb(172, 147, 68);
+            z-index: 1; /* Asegura que el contenido del section esté por encima del pseudo-elemento */
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.322); /* Color negro con opacidad */
+            border-radius: 8px; /* Igualar el borde del section */
+            z-index: -1; /* Para que esta capa quede detrás del contenido */
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            background-color: #3d3b396b; /* Color del Borde en la informacion */
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 12px;
+        }
+        header {
+            position: relative;
+            background-image: url('https://media.craiyon.com/2023-10-14/ac6ee80c6f52477888db5e4fa5e86d7e.webp');
+            background-size: cover; /* Asegura que la imagen cubra todo el área del header */
+            background-position: center; /* Centra la imagen en el header */
+            color: rgba(185, 183, 223, 0.548); 
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            height: 90px; /* Ajusta la altura del header según sea necesario */
+        }
+
+        article {
+            padding: 10px;
+            margin: 10px 0;
+        }
+        article p {
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #fcf155; /* Color de los Links */
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Nueva clase para el párrafo con estilo especial */
+        .intro-paragraph {
+            background-color: rgba(0, 0, 0, 0.568); /* Fondo semitransparente */
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sapiens</h1>
+    </header>
+    <section>
+
+        <!-- Párrafo con estilo especial -->
+        <p class="intro-paragraph">
+            Los Sapiens son una de las razas más numerosas y organizadas de Ugbah. Han logrado formar sociedades unidas, en contraste con las tribus dispersas de otras razas. Son conocidos por su habilidad para adaptarse y su unión en grandes grupos.
+        </p>
+
+        <h2>Rasgos raciales</h2>
+        <ul>
+            <li><b>Aumento de estadísticas:</b> Los Sapiens obtienen +2 a Inteligencia y +1 a Destreza.</li>
+            <li><b>Adaptabilidad:</b> Los Sapiens pueden escoger una habilidad adicional para ser competente en ella.</li>
+            <li><b>Resiliencia:</b> Una vez al día, si fallan una tirada de salvación, pueden repetirla.</li>
+        </ul>
+
+        <h2>Estadísticas base:</h2>
+        <ul>
+            <li><b>Fuerza:</b> 10</li>
+            <li><b>Destreza:</b> 12</li>
+            <li><b>Constitución:</b> 10</li>
+            <li><b>Inteligencia:</b> 14</li>
+            <li><b>Sabiduría:</b> 13</li>
+            <li><b>Carisma:</b> 10</li>
+        </ul>
+
+        <h2>Velocidad y tamaño</h2>
+        <ul>
+            <li><b>Tamaño:</b> Mediano</li>
+            <li><b>Velocidad de movimiento:</b> 30 pies (9 metros)</li>
+        </ul>
+
+        <h2>Idiomas:</h2>
+        <ul>
+            <li><p>Los Sapiens hablan el ..., además de un idioma adicional a su elección.</p></li>
+        </ul>
+
+        <h2>Cultura y Creencias:</h2>
+        <ul>
+            <li><p>Los Sapiens creen que descienden de las estrellas, específicamente de la Vía Láctea. Sus creencias se centran en el cosmos y las hogueras celestiales (estrellas), que guían su destino.</p></li>
+        </ul>
+
+        <h2>Territorio:</h2>
+        <ul>
+            <li><p>Los Sapiens dominan la sección Nor-Oeste, donde han establecido una enorme aldea al aire libre, protegiéndose de los ataques de otras razas más agresivas gracias a la defensa y apoyo de la comunidad.</p></li>
+        </ul>
+
+        <h2>Nombres comunes:</h2>
+        <ul>
+            <li><b>Masculinos:</b> Kael, Bor, Luka</li>
+            <li><b>Femeninos:</b> Æla, Miris, Lira</li>
+        </ul>
+        <a href="Razas.html">Ir a la página de Razas</a>
+
+    </section>
+</body>
+</html>
