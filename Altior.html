@@ -1,1 +1,174 @@
-altior
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altior - Ugbah</title>
+    <style>
+        body {
+            font-family: 'Crimson Text', serif; /* Fuente con toque rústico */
+            background-color: #a64b2a; /* Fondo en tono beige */
+            color: #d6dde2;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #c7b299;
+        }
+        header {
+            position: relative;
+            background-image: url('https://media.craiyon.com/2023-10-14/ac6ee80c6f52477888db5e4fa5e86d7e.webp');
+            background-size: cover; /* Asegura que la imagen cubra todo el área del header */
+            background-position: center; /* Centra la imagen en el header */
+            color: rgba(185, 183, 223, 0.548); 
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            height: 90px; /* Ajusta la altura del header según sea necesario */
+        }
+        section {
+            position: relative;
+            margin: 20px auto;
+            padding: 20px;
+            width: 100%; /* Hace que ocupe todo el ancho disponible */
+            max-width: 1200px; /* Limita el ancho máximo solo en pantallas más grandes */
+            background-image: url('https://img.freepik.com/foto-gratis/piedra-negro_1194-5746.jpg?t=st=1728900543~exp=1728904143~hmac=994a4389c50f8525631fd46ae0aa61a5b0754e6d40361ce11377358d329dfd6a&w=826');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.432); /* Color negro con opacidad */
+            border-radius: 8px; /* Igualar el borde del section */
+            z-index: -1; /* Para que esta capa quede detrás del contenido */
+        }
+
+        /* Estilos para los recuadros */
+        .content-box {
+            background-color: rgba(61, 59, 57, 0.6); /* Color del fondo */
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 12px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            overflow: hidden; /* Evitar que el texto salga del contenedor */
+        }
+
+        /* Variantes de forma */
+        .variant1 {
+            clip-path: polygon(
+                3% 15%, 15% 5%, 75% 10%, 85% 0%, 95% 25%, 
+                80% 40%, 90% 60%, 50% 70%, 30% 85%, 15% 75%, 
+                5% 55%
+            );
+        }
+
+        .variant2 {
+            clip-path: polygon(
+                1% 24%, 90% 5%, 70% 8%, 88% 10%, 95% 20%, 
+                75% 30%, 95% 50%, 70% 75%, 40% 90%, 20% 80%, 
+                10% 50%
+            );
+        }
+
+        .variant3 {
+            clip-path: polygon(
+                12% 22%, 22% 12%, 65% 25%, 85% 15%, 95% 32%, 
+                72% 48%, 92% 65%, 60% 78%, 42% 92%, 22% 82%, 
+                8% 62%
+            );
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #fcf155; /* Color de los Links */
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Nueva clase para el párrafo con estilo especial */
+        .intro-paragraph {
+            background-color: rgba(0, 0, 0, 0.568); /* Fondo semitransparente */
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Altior</h1>
+    </header>
+    <section>
+        <!-- Párrafo con estilo especial -->
+        <div class="content-box variant1">
+            <p class="intro-paragraph">
+                Los Altior, o Homo Altior, son el resultado de una rara hibridación entre los Neandertales y los Homo Sapiens. A lo largo de los milenios, han desarrollado características excepcionales, combinando la fuerza descomunal de sus antepasados simios con la inteligencia avanzada de los Homo Sapiens más modernos. Los Altior son seres majestuosos, de gran estatura y musculatura densa, venerados como semidioses o representantes de divinidades entre sus congéneres.
+            </p>
+        </div>
+
+        <h2>Rasgos raciales</h2>
+        <div class="content-box variant2">
+            <ul>
+                <li><b>Aumento de estadísticas:</b> Los Altior obtienen +3 a Inteligencia y +5 a Fuerza.</li>
+                <li><b>Adaptabilidad:</b> Los Sapiens pueden escoger una habilidad adicional para ser competente en ella.</li>
+                <li><b>Resiliencia Ancestral:</b> Una vez al día, si fallan una tirada de salvación, pueden repetirla.</li>
+                <li><b>Adaptación Camuflada:</b> Los Altior obtienen competencia en dos habilidades de su elección entre: Engaño, Perspicacia, Historia, y Sigilo.</li>
+            </ul>
+        </div>
+
+        <div class="content-box variant3">
+            <h2>Estadísticas base:</h2>
+            <ul>
+                <li><b>Fuerza:</b> 19</li>
+                <li><b>Destreza:</b> 12</li>
+                <li><b>Constitución:</b> 16</li>
+                <li><b>Inteligencia:</b> 16</li>
+                <li><b>Sabiduría:</b> 12</li>
+                <li><b>Carisma:</b> 10</li>
+            </ul>
+        </div>
+
+        <div class="content-box variant1">
+            <h2>Velocidad y tamaño</h2>
+            <ul>
+                <li><b>Tamaño:</b> Mediano-grande</li>
+                <li><b>Velocidad de movimiento:</b> 18 metros</li>
+            </ul>
+        </div>
+
+        <div class="content-box variant2">
+            <h2>Idiomas:</h2>
+            <ul>
+                <li><p>Los Altiors hablan el idioma de los Sapiens o Neandertales, además de un idioma adicional a su elección.</p></li>
+            </ul>
+        </div>
+
+        <div class="content-box variant3">
+            <h2>Cultura y Creencias:</h2>
+            <ul>
+                <li><p>Los Altior suelen tomar roles de gran autoridad, ya sea como líderes tribales o figuras religiosas. La combinación de su fuerza e inteligencia los convierte en los "representantes de los dioses" o incluso los dioses encarnados en algunos casos. Son líderes que toman decisiones tanto militares como espirituales.</p></li>
+                <li><p>  Aunque se integran con las culturas de Homo Sapiens y Neandertales, los Altior mantienen una cultura secreta en la que conservan registros de su linaje y conocimientos avanzados. Esta cultura interna es una mezcla de espiritualidad primitiva y un entendimiento pragmático del mundo que los rodea.</p></li>
+                <li><p>  Debido a su percepción como semidioses, los Altior participan en rituales donde se les da importancia a la memoria de los ancestros, y donde se busca fortalecer la conexión con los espíritus que habitan en el mundo natural.</p></li>
+            </ul>
+        </div>
+    </section>
+    <a href="Razas.html" style="color:#c7b299; font-size: 1.5em; font-weight: bold;">Volver a Razas</a>
+</body>
+</html>
